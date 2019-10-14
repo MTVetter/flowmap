@@ -947,7 +947,7 @@ require([
         function createGraphicsFromCsv(csvFilePath, canvasLayer){
             var infoTemplate = new InfoTemplate();
             infoTemplate.setTitle("Working in <b>${d_county} County</b>")
-            infoTemplate.setContent("<b>${h_Workers} Workers</b> living in <b>${h_county} County</b> traveling to <b>${d_county} County</b> for work.");
+            infoTemplate.setContent("<b>${h_Workers} Workers</b> living in <b>${h_county} County</b> travel to <b>${d_county} County</b> for work.");
 
             Papa.parse(csvFilePath,{
                 download: true,
@@ -974,46 +974,6 @@ require([
                 }
             });
         }
-
-        // counties.on("click", function(evt){
-        //     if (evt.graphic.attributes.Name === "Harris County"){
-        //         austin.selectGraphicsForPathDisplayById("h_id", 7, true, "SELECTION_NEW");
-        //     } else if (evt.graphic.attributes.Name === "Austin County"){
-        //         austin.selectGraphicsForPathDisplayById("h_id", 1, true, "SELECTION_NEW");
-        //     } else if (evt.graphic.attributes.Name === "Brazoria County"){
-        //         austin.selectGraphicsForPathDisplayById("h_id", 2, true, "SELECTION_NEW");
-        //     } else if (evt.graphic.attributes.Name === "Chambers County"){
-        //         austin.selectGraphicsForPathDisplayById("h_id", 3, true, "SELECTION_NEW");
-        //     } else if (evt.graphic.attributes.Name === "Colorado County"){
-        //         austin.selectGraphicsForPathDisplayById("h_id", 4, true, "SELECTION_NEW");
-        //     } else if (evt.graphic.attributes.Name === "Fort Bend County"){
-        //         austin.selectGraphicsForPathDisplayById("h_id", 5, true, "SELECTION_NEW");
-        //     } else if (evt.graphic.attributes.Name === "Galveston County"){
-        //         austin.selectGraphicsForPathDisplayById("h_id", 6, true, "SELECTION_NEW");
-        //     } else if (evt.graphic.attributes.Name === "Liberty County"){
-        //         austin.selectGraphicsForPathDisplayById("h_id", 8, true, "SELECTION_NEW");
-        //     } else if (evt.graphic.attributes.Name === "Matagorda County"){
-        //         austin.selectGraphicsForPathDisplayById("h_id", 9, true, "SELECTION_NEW");
-        //     } else if (evt.graphic.attributes.Name === "Montgomery County"){
-        //         austin.selectGraphicsForPathDisplayById("h_id", 10, true, "SELECTION_NEW");
-        //     } else if (evt.graphic.attributes.Name === "Walker County"){
-        //         austin.selectGraphicsForPathDisplayById("h_id", 11, true, "SELECTION_NEW");
-        //     } else if (evt.graphic.attributes.Name === "Waller County"){
-        //         austin.selectGraphicsForPathDisplayById("h_id", 12, true, "SELECTION_NEW");
-        //     } else if (evt.graphic.attributes.Name === "Wharton County"){
-        //         austin.selectGraphicsForPathDisplayById("h_id", 13, true, "SELECTION_NEW");
-        //     }
-        // });
-
-        // document.addEventListener("click", function(evt){
-        //     // console.log(evt.target.id);
-        //     var countyID = ["austin","brazoria","chambers","colorado","fortBend","galveston","harris","liberty","matagorda","montgomery","walker","waller","wharton"];
-        //     if (countyID.indexOf(evt.target.id) !== -1){
-        //         selectedCounty(evt.target.id);
-        //     } else {
-        //         return;
-        //     }
-        // });
 
         var clickListners = [];
         clickListners.push(on.pausable(austin, "mouse-over", handleLayerInteraction));
@@ -1054,37 +1014,7 @@ require([
         wallerLayerButton.addEventListener('click', toggleActiveLayer);
         whartonLayerButton.addEventListener('click', toggleActiveLayer);
 
-        //Function to display the flow map depending on what button was clicked
-        function selectedCounty(evt){
-            if (evt === "austin"){
-                cityToCityLayer.selectGraphicsForPathDisplayById("h_id",1,true,"SELECTION_NEW");
-            } else if (evt === "brazoria"){
-                cityToCityLayer.selectGraphicsForPathDisplayById("h_id",2,true,"SELECTION_NEW");
-            } else if (evt === "chambers"){
-                cityToCityLayer.selectGraphicsForPathDisplayById("h_id",3,true,"SELECTION_NEW");
-            } else if (evt === "colorado"){
-                cityToCityLayer.selectGraphicsForPathDisplayById("h_id",4,true,"SELECTION_NEW");
-            } else if (evt === "fortBend"){
-                cityToCityLayer.selectGraphicsForPathDisplayById("h_id",5,true,"SELECTION_NEW");
-            } else if (evt === "galveston"){
-                cityToCityLayer.selectGraphicsForPathDisplayById("h_id",6,true,"SELECTION_NEW");
-            } else if (evt === "harris"){
-                cityToCityLayer.selectGraphicsForPathDisplayById("h_id",7,true,"SELECTION_NEW");
-            } else if (evt === "liberty"){
-                cityToCityLayer.selectGraphicsForPathDisplayById("h_id",8,true,"SELECTION_NEW");
-            } else if (evt === "matagorda"){
-                cityToCityLayer.selectGraphicsForPathDisplayById("h_id",9,true,"SELECTION_NEW");
-            } else if (evt === "montgomery"){
-                cityToCityLayer.selectGraphicsForPathDisplayById("h_id",10,true,"SELECTION_NEW");
-            } else if (evt === "walker"){
-                cityToCityLayer.selectGraphicsForPathDisplayById("h_id",11,true,"SELECTION_NEW");
-            } else if (evt === "waller"){
-                cityToCityLayer.selectGraphicsForPathDisplayById("h_id",12,true,"SELECTION_NEW");
-            } else if (evt === "wharton"){
-                cityToCityLayer.selectGraphicsForPathDisplayById("h_id",13,true,"SELECTION_NEW");
-            }
-        }
-
+        //Create function for when the user clicks a button
         function toggleActiveLayer(evt){
             austinLayerButton.classList.add("btn-clear");
             brazoriaLayerButton.classList.add("btn-clear");
