@@ -24,6 +24,10 @@ require([
     HomeButton,
     on
 ){
+    document.addEventListener("click", function(){
+        document.getElementById("welcomePanel").style.display = "none";
+    });
+
     //Reference the buttons
     var austinLayerButton = document.getElementById("austinLayerButton");
     var brazoriaLayerButton = document.getElementById("brazoriaLayerButton");

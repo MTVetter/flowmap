@@ -47,13 +47,35 @@
 	#legendDiv{
 		z-index: 30;
 		top: 70%;
-		right: 15px;
+		left: 15px;
 		position: absolute;
 		width: 275px;
 		height: 275px;
 		opacity: 0.9;
 		background-color: whitesmoke;
 		padding: 10px;
+	}
+
+	#welcomePanel{
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -65%);
+		width: 40%;
+		padding: 2vh 2vw;
+		font: 16px, sans-Serif;
+		background: gainsboro;
+		box-shadow: 0 0 15px rgba(37,37,37,0.4);
+		border-radius: 35px;
+		text-align: center;
+	}
+
+	#click{
+		font-size: 18px;
+	}
+
+	#disclaimer{
+		font-size: 10px;
 	}
 
     @media (max-width: 860px) and (orientation: portrait){
@@ -68,6 +90,10 @@
         overflow-y: auto;
         opacity: 1.0;
       }
+
+	  #legendDiv{
+		  visibility: hidden;
+	  }
     }
   </style>
 </head>
@@ -105,6 +131,22 @@
       </div>
     </div>
   </div>
+  <div id="welcomePanel">
+		<div id="welcome">
+			<h2>Interactive Flow Map</h2>
+			<p>This application displays the amount of people living in one county but are driving to another county for work.
+				<br><br>Putting the mouse on a blue circle will remove every line except for the line associated with the blue circle that the mouse is on.
+				You can click on the circle to open a popup window that displays the number of people who drive to the county for work.
+				<br><br>Hover over the center of the origin county to bring up all the lines again.
+			</p>
+			<p id="click">
+				Click anywhere in the map to begin.
+			</p>
+			<p id="disclaimer">
+				<b>Note: The blue circles represent the center of the county and not where all the workers work in the county.</b>
+			</p>
+		</div>
+	</div>
 
   <!-- load 3rd-party CSV parsing libary  -->
   <script src="https://unpkg.com/papaparse@5.0.1/papaparse.min.js"></script>
