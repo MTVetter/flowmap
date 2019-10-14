@@ -44,6 +44,18 @@
       box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
     }
 
+	#legendDiv{
+		z-index: 30;
+		top: 70%;
+		right: 15px;
+		position: absolute;
+		width: 275px;
+		height: 275px;
+		opacity: 0.9;
+		background-color: whitesmoke;
+		padding: 10px;
+	}
+
     @media (max-width: 860px) and (orientation: portrait){
       .controls-panel{
         position: inherit;
@@ -62,7 +74,10 @@
 
 <body class="calcite">
   <div id="map">
-    <div id="HomeButton"></div>
+	<div id="HomeButton"></div>
+	<div id="legendDiv">
+		<img src="img/legend.png">
+	</div>
   </div>
 
   <div class="controls-panel">

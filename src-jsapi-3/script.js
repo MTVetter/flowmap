@@ -947,7 +947,7 @@ require([
         function createGraphicsFromCsv(csvFilePath, canvasLayer){
             var infoTemplate = new InfoTemplate();
             infoTemplate.setTitle("Working in <b>${d_county} County</b>")
-            infoTemplate.setContent("<b>${h_Workers} Workers</b> living in <b>${h_county} County</b> travel to <b>${d_county} County</b> for work.");
+            infoTemplate.setContent("<b>${h_Workers} workers</b> living in <b>${h_county} County</b> travel to <b>${d_county} County</b> for work.");
 
             Papa.parse(csvFilePath,{
                 download: true,
@@ -975,6 +975,7 @@ require([
             });
         }
 
+        //Add a listener to handle when a user mouses over a point
         var clickListners = [];
         clickListners.push(on.pausable(austin, "mouse-over", handleLayerInteraction));
         clickListners.push(on.pausable(brazoria, "mouse-over", handleLayerInteraction));
@@ -990,6 +991,7 @@ require([
         clickListners.push(on.pausable(waller, "mouse-over", handleLayerInteraction));
         clickListners.push(on.pausable(wharton, "mouse-over", handleLayerInteraction));
 
+        //Interaction function that creates a new selection of the data
         function handleLayerInteraction(evt){
             var canvasLayer = evt.graphic.getLayer();
             if (evt.isOriginGraphic){

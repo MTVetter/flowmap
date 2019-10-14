@@ -47,7 +47,7 @@ define([
             globalCompositeOperation: 'destination-over',
             radius: 50,
             fillStyle: 'rgba(195, 255, 62, 0)',
-            lineWidth: 1,
+            lineWidth: 0,
             strokeStyle: 'rgb(195, 255, 62,0)',
             shadowBlur: 0
           }
@@ -58,9 +58,9 @@ define([
           symbol: {
             globalCompositeOperation: 'destination-over',
             radius: 6,
-            fillStyle: 'rgba(195, 255, 62, 0.60)',
+            fillStyle: 'rgba(195, 255, 62, 0)',
             lineWidth: 4,
-            strokeStyle: 'rgb(207, 0, 51)',
+            strokeStyle: 'rgb(207, 0, 51,0)',
             shadowBlur: 0
           }
         };
@@ -69,7 +69,7 @@ define([
           type: 'simple',
           symbol: {
             globalCompositeOperation: 'destination-over',
-            radius: 2.5,
+            radius: 4,
             fillStyle: 'rgba(17, 142, 170, 0.7)',
             lineWidth: 0.25,
             strokeStyle: 'rgb(17, 142, 170)',
