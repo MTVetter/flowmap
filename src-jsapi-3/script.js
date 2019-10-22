@@ -105,7 +105,7 @@ require([
                     classMinValue: 0,
                     classMaxValue: 500,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 2,
                         lineCap: "round"
                     }
@@ -113,7 +113,7 @@ require([
                     classMinValue: 501,
                     classMaxValue: 1000,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 4,
                         lineCap: "round"
                     }
@@ -121,7 +121,7 @@ require([
                     classMinValue: 1001,
                     classMaxValue: 2500,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 6,
                         lineCap: "round"
                     }
@@ -129,13 +129,17 @@ require([
                     classMinValue: 2501,
                     classMaxValue: 100000,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 8,
                         lineCap: "round"
                     }
                 }]
             },
-            wrapAroundCanvas: true
+            wrapAroundCanvas: true,
+            animationStarted: true,
+            animationDuration: 2000,
+            animationEasingFamily: "Linear",
+            animationEasingType: "None"
         });
 
         var brazoria = new CanvasFlowmapLayer({
@@ -171,7 +175,7 @@ require([
                     classMinValue: 0,
                     classMaxValue: 500,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 2,
                         lineCap: "round"
                     }
@@ -179,7 +183,7 @@ require([
                     classMinValue: 501,
                     classMaxValue: 1000,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 4,
                         lineCap: "round"
                     }
@@ -187,7 +191,7 @@ require([
                     classMinValue: 1001,
                     classMaxValue: 2500,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 6,
                         lineCap: "round"
                     }
@@ -195,13 +199,17 @@ require([
                     classMinValue: 2501,
                     classMaxValue: 100000,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 8,
                         lineCap: "round"
                     }
                 }]
             },
-            wrapAroundCanvas: true
+            wrapAroundCanvas: true,
+            animationStarted: true,
+            animationDuration: 2000,
+            animationEasingFamily: "Linear",
+            animationEasingType: "None"
         });
 
         var chambers = new CanvasFlowmapLayer({
@@ -237,7 +245,7 @@ require([
                     classMinValue: 0,
                     classMaxValue: 500,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 2,
                         lineCap: "round"
                     }
@@ -245,7 +253,7 @@ require([
                     classMinValue: 501,
                     classMaxValue: 1000,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 4,
                         lineCap: "round"
                     }
@@ -253,7 +261,7 @@ require([
                     classMinValue: 1001,
                     classMaxValue: 2500,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 6,
                         lineCap: "round"
                     }
@@ -261,13 +269,17 @@ require([
                     classMinValue: 2501,
                     classMaxValue: 100000,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 8,
                         lineCap: "round"
                     }
                 }]
             },
-            wrapAroundCanvas: true
+            wrapAroundCanvas: true,
+            animationStarted: true,
+            animationDuration: 2000,
+            animationEasingFamily: "Linear",
+            animationEasingType: "None"
         });
 
         var colorado = new CanvasFlowmapLayer({
@@ -303,7 +315,7 @@ require([
                     classMinValue: 0,
                     classMaxValue: 500,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 2,
                         lineCap: "round"
                     }
@@ -311,7 +323,7 @@ require([
                     classMinValue: 501,
                     classMaxValue: 1000,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 4,
                         lineCap: "round"
                     }
@@ -319,7 +331,7 @@ require([
                     classMinValue: 1001,
                     classMaxValue: 2500,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 6,
                         lineCap: "round"
                     }
@@ -327,13 +339,17 @@ require([
                     classMinValue: 2501,
                     classMaxValue: 100000,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 8,
                         lineCap: "round"
                     }
                 }]
             },
-            wrapAroundCanvas: true
+            wrapAroundCanvas: true,
+            animationStarted: true,
+            animationDuration: 2000,
+            animationEasingFamily: "Linear",
+            animationEasingType: "None"
         });
 
         var fortbend = new CanvasFlowmapLayer({
@@ -369,7 +385,7 @@ require([
                     classMinValue: 0,
                     classMaxValue: 500,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 2,
                         lineCap: "round"
                     }
@@ -377,7 +393,7 @@ require([
                     classMinValue: 501,
                     classMaxValue: 1000,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 4,
                         lineCap: "round"
                     }
@@ -385,7 +401,7 @@ require([
                     classMinValue: 1001,
                     classMaxValue: 2500,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 6,
                         lineCap: "round"
                     }
@@ -393,13 +409,17 @@ require([
                     classMinValue: 2501,
                     classMaxValue: 10000000,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 8,
                         lineCap: "round"
                     }
                 }]
             },
-            wrapAroundCanvas: true
+            wrapAroundCanvas: true,
+            animationStarted: true,
+            animationDuration: 2000,
+            animationEasingFamily: "Linear",
+            animationEasingType: "None"
         });
 
         var galveston = new CanvasFlowmapLayer({
@@ -435,7 +455,7 @@ require([
                     classMinValue: 0,
                     classMaxValue: 500,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 2,
                         lineCap: "round"
                     }
@@ -443,7 +463,7 @@ require([
                     classMinValue: 501,
                     classMaxValue: 1000,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 4,
                         lineCap: "round"
                     }
@@ -451,7 +471,7 @@ require([
                     classMinValue: 1001,
                     classMaxValue: 2500,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 6,
                         lineCap: "round"
                     }
@@ -459,13 +479,17 @@ require([
                     classMinValue: 2501,
                     classMaxValue: 100000,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 8,
                         lineCap: "round"
                     }
                 }]
             },
-            wrapAroundCanvas: true
+            wrapAroundCanvas: true,
+            animationStarted: true,
+            animationDuration: 2000,
+            animationEasingFamily: "Linear",
+            animationEasingType: "None"
         });
 
         var harris = new CanvasFlowmapLayer({
@@ -501,7 +525,7 @@ require([
                     classMinValue: 0,
                     classMaxValue: 500,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 2,
                         lineCap: "round"
                     }
@@ -509,7 +533,7 @@ require([
                     classMinValue: 501,
                     classMaxValue: 1000,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 4,
                         lineCap: "round"
                     }
@@ -517,7 +541,7 @@ require([
                     classMinValue: 1001,
                     classMaxValue: 2500,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 6,
                         lineCap: "round"
                     }
@@ -525,13 +549,17 @@ require([
                     classMinValue: 2501,
                     classMaxValue: 10000000,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 8,
                         lineCap: "round"
                     }
                 }]
             },
-            wrapAroundCanvas: true
+            wrapAroundCanvas: true,
+            animationStarted: true,
+            animationDuration: 2000,
+            animationEasingFamily: "Linear",
+            animationEasingType: "None"
         });
 
         var liberty = new CanvasFlowmapLayer({
@@ -567,7 +595,7 @@ require([
                     classMinValue: 0,
                     classMaxValue: 500,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 2,
                         lineCap: "round"
                     }
@@ -575,7 +603,7 @@ require([
                     classMinValue: 501,
                     classMaxValue: 1000,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 4,
                         lineCap: "round"
                     }
@@ -583,7 +611,7 @@ require([
                     classMinValue: 1001,
                     classMaxValue: 2500,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 6,
                         lineCap: "round"
                     }
@@ -591,13 +619,17 @@ require([
                     classMinValue: 2501,
                     classMaxValue: 100000,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 8,
                         lineCap: "round"
                     }
                 }]
             },
-            wrapAroundCanvas: true
+            wrapAroundCanvas: true,
+            animationStarted: true,
+            animationDuration: 2000,
+            animationEasingFamily: "Linear",
+            animationEasingType: "None"
         });
 
         var matagorda = new CanvasFlowmapLayer({
@@ -633,7 +665,7 @@ require([
                     classMinValue: 0,
                     classMaxValue: 500,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 2,
                         lineCap: "round"
                     }
@@ -641,7 +673,7 @@ require([
                     classMinValue: 501,
                     classMaxValue: 1000,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 4,
                         lineCap: "round"
                     }
@@ -649,7 +681,7 @@ require([
                     classMinValue: 1001,
                     classMaxValue: 2500,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 6,
                         lineCap: "round"
                     }
@@ -657,13 +689,17 @@ require([
                     classMinValue: 2501,
                     classMaxValue: 100000,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 8,
                         lineCap: "round"
                     }
                 }]
             },
-            wrapAroundCanvas: true
+            wrapAroundCanvas: true,
+            animationStarted: true,
+            animationDuration: 2000,
+            animationEasingFamily: "Linear",
+            animationEasingType: "None"
         });
 
         var montgomery = new CanvasFlowmapLayer({
@@ -699,7 +735,7 @@ require([
                     classMinValue: 0,
                     classMaxValue: 500,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 2,
                         lineCap: "round"
                     }
@@ -707,7 +743,7 @@ require([
                     classMinValue: 501,
                     classMaxValue: 1000,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 4,
                         lineCap: "round"
                     }
@@ -715,7 +751,7 @@ require([
                     classMinValue: 1001,
                     classMaxValue: 2500,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 6,
                         lineCap: "round"
                     }
@@ -723,13 +759,17 @@ require([
                     classMinValue: 2501,
                     classMaxValue: 10000000,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 8,
                         lineCap: "round"
                     }
                 }]
             },
-            wrapAroundCanvas: true
+            wrapAroundCanvas: true,
+            animationStarted: true,
+            animationDuration: 2000,
+            animationEasingFamily: "Linear",
+            animationEasingType: "None"
         });
 
         var walker = new CanvasFlowmapLayer({
@@ -765,7 +805,7 @@ require([
                     classMinValue: 0,
                     classMaxValue: 500,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 2,
                         lineCap: "round"
                     }
@@ -773,7 +813,7 @@ require([
                     classMinValue: 501,
                     classMaxValue: 1000,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 4,
                         lineCap: "round"
                     }
@@ -781,7 +821,7 @@ require([
                     classMinValue: 1001,
                     classMaxValue: 2500,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 6,
                         lineCap: "round"
                     }
@@ -789,13 +829,17 @@ require([
                     classMinValue: 2501,
                     classMaxValue: 100000,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 8,
                         lineCap: "round"
                     }
                 }]
             },
-            wrapAroundCanvas: true
+            wrapAroundCanvas: true,
+            animationStarted: true,
+            animationDuration: 2000,
+            animationEasingFamily: "Linear",
+            animationEasingType: "None"
         });
 
         var waller = new CanvasFlowmapLayer({
@@ -831,7 +875,7 @@ require([
                     classMinValue: 0,
                     classMaxValue: 500,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 2,
                         lineCap: "round"
                     }
@@ -839,7 +883,7 @@ require([
                     classMinValue: 501,
                     classMaxValue: 1000,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 4,
                         lineCap: "round"
                     }
@@ -847,7 +891,7 @@ require([
                     classMinValue: 1001,
                     classMaxValue: 2500,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 6,
                         lineCap: "round"
                     }
@@ -855,13 +899,17 @@ require([
                     classMinValue: 2501,
                     classMaxValue: 100000,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 8,
                         lineCap: "round"
                     }
                 }]
             },
-            wrapAroundCanvas: true
+            wrapAroundCanvas: true,
+            animationStarted: true,
+            animationDuration: 2000,
+            animationEasingFamily: "Linear",
+            animationEasingType: "None"
         });
 
         var wharton = new CanvasFlowmapLayer({
@@ -897,7 +945,7 @@ require([
                     classMinValue: 0,
                     classMaxValue: 500,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 2,
                         lineCap: "round"
                     }
@@ -905,7 +953,7 @@ require([
                     classMinValue: 501,
                     classMaxValue: 1000,
                     symbol: {
-                        strokeStyle: "rgba(255, 0, 0, 1)",
+                        strokeStyle: "rgba(255, 0, 0, 0.6)",
                         lineWidth: 4,
                         lineCap: "round"
                     }
@@ -913,7 +961,7 @@ require([
                     classMinValue: 1001,
                     classMaxValue: 2500,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 6,
                         lineCap: "round"
                     }
@@ -921,13 +969,17 @@ require([
                     classMinValue: 2501,
                     classMaxValue: 100000,
                     symbol: {
-                        strokeStyle: "rgba(255,0,0,1)",
+                        strokeStyle: "rgba(255,0,0,0.6)",
                         lineWidth: 8,
                         lineCap: "round"
                     }
                 }]
             },
-            wrapAroundCanvas: true
+            wrapAroundCanvas: true,
+            animationStarted: true,
+            animationDuration: 2000,
+            animationEasingFamily: "Linear",
+            animationEasingType: "None"
         });
 
         map.addLayers([austin, brazoria, chambers, colorado, fortbend, galveston, harris, liberty, matagorda, montgomery, walker, waller, wharton]);
